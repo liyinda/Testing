@@ -42,7 +42,8 @@ func sayhelloName(w http.ResponseWriter, r *http.Request) {
         fmt.Println("val:", strings.Join(v, ""))
     }
     fmt.Println(RemoteIp(r))
-    fmt.Fprintf(w, "Hello astaxie!")
+    //fmt.Fprintf(w, "Hello astaxie!")
+    fmt.Fprintf(w, RemoteIp(r))
 }
  
 
